@@ -1,0 +1,94 @@
+PODS:
+  - Alamofire (4.7.3)
+  - AlamofireImage (3.4.1):
+    - Alamofire (~> 4.7)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - Crashlytics (3.10.0):
+    - Fabric (~> 1.7.3)
+  - Fabric (1.7.3)
+  - FacebookCore (0.3.2):
+    - Bolts (~> 1.8)
+    - FBSDKCoreKit (~> 4.35)
+  - FacebookLogin (0.3.2):
+    - Bolts (~> 1.8)
+    - FacebookCore (~> 0.3.2)
+    - FBSDKCoreKit (~> 4.35)
+    - FBSDKLoginKit (~> 4.35)
+  - FBSDKCoreKit (4.35.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.35.0):
+    - FBSDKCoreKit
+  - IQKeyboardManager (6.1.1)
+  - razorpay-pod (1.0.26)
+  - ReachabilitySwift (4.1.0)
+  - SDWebImage (4.3.0):
+    - SDWebImage/Core (= 4.3.0)
+  - SDWebImage/Core (4.3.0)
+  - SideMenuController (0.2.4)
+  - SwiftyGif (4.1.0)
+  - SwiftyJSON (4.0.0)
+  - Swinject (2.2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - AlamofireImage (~> 3.4)
+  - Crashlytics
+  - Fabric
+  - FacebookCore
+  - FacebookLogin
+  - IQKeyboardManager
+  - razorpay-pod (= 1.0.26)
+  - ReachabilitySwift
+  - SDWebImage (~> 4.0)
+  - SideMenuController
+  - SwiftyGif
+  - SwiftyJSON (~> 4.0.0)
+  - Swinject
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
+    - Bolts
+    - Crashlytics
+    - Fabric
+    - FacebookCore
+    - FacebookLogin
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - IQKeyboardManager
+    - razorpay-pod
+    - ReachabilitySwift
+    - SDWebImage
+    - SideMenuController
+    - SwiftyGif
+    - SwiftyJSON
+    - Swinject
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  AlamofireImage: 78d67ccbb763d87ba44b21583d2153500a195630
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  Crashlytics: a989ef242b66605577a425733797f810bd2725eb
+  Fabric: bb495bb9a7a7677c6d03a1f8b83d95bc49b47e41
+  FacebookCore: fe93222bb70346730ef33b061d493e9e7a7cb1f5
+  FacebookLogin: a4e225974791c82836765a294582b4778baffc07
+  FBSDKCoreKit: 1a5b2e3ceb5ca827a53c54aa5f4a3480efff80d2
+  FBSDKLoginKit: 00a3d65d1226852f9d76dcddff01981e5e6d9c38
+  IQKeyboardManager: 79c57795f5c2408d259d37b9da2ed07efcbb5225
+  razorpay-pod: 6f1eeb10e473b4a88baee1cd054eed76b926c923
+  ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
+  SDWebImage: 6da6c8bca115addc4de8613362e1b15f66333825
+  SideMenuController: b463d2b3aa58e2afe57f57a07938fa9a647894ca
+  SwiftyGif: d36c6dfb52e2ca1e48fe349d225f50ec4123ec85
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  Swinject: 4ca48bca7de5f398229a26abe1ac902b9f3ee541
+
+PODFILE CHECKSUM: c5bd516297a670ccb6df4385b36b940073db9a62
+
+COCOAPODS: 1.5.2

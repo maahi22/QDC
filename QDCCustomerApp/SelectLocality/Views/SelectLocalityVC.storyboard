@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1cy-Jl-7os">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Select Locality-->
+        <scene sceneID="Cux-QU-9Hj">
+            <objects>
+                <viewController storyboardIdentifier="SelectLocalityVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LMD-f1-Wva" customClass="SelectLocalityVC" customModule="QDCCustomerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qvp-al-MTO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgw-UQ-lE1">
+                                <rect key="frame" x="16" y="74" width="28" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="28" id="Gpz-c6-E72"/>
+                                    <constraint firstAttribute="height" constant="25" id="K35-WT-esj"/>
+                                </constraints>
+                                <state key="normal" image="left-arrow"/>
+                                <connections>
+                                    <action selector="backPressed:" destination="LMD-f1-Wva" eventType="touchUpInside" id="fhw-zv-Tmh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your locality" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOC-57-IfS">
+                                <rect key="frame" x="20" y="244" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eef-kG-lIT">
+                                <rect key="frame" x="0.0" y="279.5" width="375" height="367.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="ohB-hF-Aq8">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <connections>
+                                    <outlet property="dataSource" destination="LMD-f1-Wva" id="OZy-xF-Wys"/>
+                                    <outlet property="delegate" destination="LMD-f1-Wva" id="rRe-Fm-T8J"/>
+                                </connections>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_image" translatesAutoresizingMaskIntoConstraints="NO" id="OoT-RI-VrF">
+                                <rect key="frame" x="107.5" y="74" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OoT-RI-VrF" secondAttribute="height" multiplier="1:1" id="0le-Sq-ehj"/>
+                                    <constraint firstAttribute="height" constant="160" id="biH-0e-I8z"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eef-kG-lIT" firstAttribute="leading" secondItem="BGE-Mp-ufE" secondAttribute="leading" id="EER-jw-cj2"/>
+                            <constraint firstItem="BGE-Mp-ufE" firstAttribute="trailing" secondItem="vOC-57-IfS" secondAttribute="trailing" constant="20" id="GLH-AH-XZA"/>
+                            <constraint firstItem="vOC-57-IfS" firstAttribute="leading" secondItem="BGE-Mp-ufE" secondAttribute="leading" constant="20" id="JhI-if-zD7"/>
+                            <constraint firstItem="OoT-RI-VrF" firstAttribute="top" secondItem="BGE-Mp-ufE" secondAttribute="top" constant="10" id="LyL-tV-34B"/>
+                            <constraint firstItem="eef-kG-lIT" firstAttribute="top" secondItem="vOC-57-IfS" secondAttribute="bottom" constant="15" id="PXG-8D-LSI"/>
+                            <constraint firstItem="fgw-UQ-lE1" firstAttribute="leading" secondItem="BGE-Mp-ufE" secondAttribute="leading" constant="16" id="R2M-pO-j3n"/>
+                            <constraint firstItem="BGE-Mp-ufE" firstAttribute="bottom" secondItem="eef-kG-lIT" secondAttribute="bottom" constant="20" id="YBB-cg-hue"/>
+                            <constraint firstItem="vOC-57-IfS" firstAttribute="top" secondItem="OoT-RI-VrF" secondAttribute="bottom" constant="10" id="dQd-Qb-dm1"/>
+                            <constraint firstItem="fgw-UQ-lE1" firstAttribute="top" secondItem="BGE-Mp-ufE" secondAttribute="top" constant="10" id="p65-oC-Ifl"/>
+                            <constraint firstItem="OoT-RI-VrF" firstAttribute="centerX" secondItem="qvp-al-MTO" secondAttribute="centerX" id="uwu-gy-Rg1"/>
+                            <constraint firstItem="eef-kG-lIT" firstAttribute="trailing" secondItem="BGE-Mp-ufE" secondAttribute="trailing" id="zsH-P6-CCO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BGE-Mp-ufE"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Select Locality" id="Mqt-a8-5Ic">
+                        <barButtonItem key="backBarButtonItem" title=" " id="Uva-8T-qbL"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="backButon" destination="fgw-UQ-lE1" id="2IV-tK-aa9"/>
+                        <outlet property="serviableAreaViewModel" destination="ROT-Of-Bg3" id="cz2-FO-jDy"/>
+                        <outlet property="tableView" destination="eef-kG-lIT" id="R3g-IS-k0j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ggW-ZI-3nj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="7qK-kP-6b7" customClass="ServicableAreaClient" customModule="QDCCustomerApp" customModuleProvider="target"/>
+                <customObject id="ROT-Of-Bg3" customClass="ServiableAreaViewModel" customModule="QDCCustomerApp" customModuleProvider="target">
+                    <connections>
+                        <outlet property="servicableAreaClient" destination="7qK-kP-6b7" id="vod-sV-DDT"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="1537" y="-18"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="La6-hw-ZPX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1cy-Jl-7os" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RWd-Oj-hYP">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LMD-f1-Wva" kind="relationship" relationship="rootViewController" id="s8m-8t-82c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ald-Tg-ewW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="797.60000000000002" y="-87.706146926536732"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="app_image" width="1024" height="1024"/>
+        <image name="left-arrow" width="51.200000762939453" height="51.200000762939453"/>
+    </resources>
+</document>

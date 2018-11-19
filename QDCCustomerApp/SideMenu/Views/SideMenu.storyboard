@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cQC-gU-Zqc">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Side Menu View Controller-->
+        <scene sceneID="XQC-jK-hh2">
+            <objects>
+                <viewController storyboardIdentifier="CustomSideMenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cQC-gU-Zqc" customClass="CustomSideMenuViewController" customModule="QDCCustomerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YKp-yu-gl9"/>
+                        <viewControllerLayoutGuide type="bottom" id="QtV-Ok-309"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QfJ-Jv-gqN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="Efs-pl-aZn" kind="custom" identifier="showHome" customClass="CenterContainmentSegue" customModule="SideMenuController" id="j5f-df-VNP"/>
+                        <segue destination="4aq-YH-Fme" kind="custom" identifier="containSideMenu" customClass="SideContainmentSegue" customModule="SideMenuController" id="cvW-kz-pxX"/>
+                        <segue destination="QqY-H9-sIN" kind="custom" identifier="showPickUp" customClass="CenterContainmentSegue" customModule="SideMenuController" id="qJV-aj-LXi"/>
+                        <segue destination="FSV-ya-fS2" kind="custom" identifier="showDueAmount" customClass="CenterContainmentSegue" customModule="SideMenuController" id="P1W-Sy-BcD"/>
+                        <segue destination="8O2-aP-zdO" kind="custom" identifier="showMyOrder" customClass="CenterContainmentSegue" customModule="SideMenuController" id="Ot3-Xe-hCS"/>
+                        <segue destination="Ytb-g8-t8e" kind="custom" identifier="showPriceList" customClass="CenterContainmentSegue" customModule="SideMenuController" id="TPS-t8-4er"/>
+                        <segue destination="RbI-yb-liY" kind="custom" identifier="showOffer" customClass="CenterContainmentSegue" customModule="SideMenuController" id="1h3-4b-x81"/>
+                        <segue destination="OLV-Na-oQU" kind="custom" identifier="showFeedback" customClass="CenterContainmentSegue" customModule="SideMenuController" id="F2W-im-qXo"/>
+                        <segue destination="M3S-A4-MIh" kind="custom" identifier="showSettings" customClass="CenterContainmentSegue" customModule="SideMenuController" id="b1M-mT-d7Y"/>
+                        <segue destination="pie-Ys-dPW" kind="custom" identifier="showAboutUs" customClass="CenterContainmentSegue" customModule="SideMenuController" id="TcT-SK-a7c"/>
+                        <segue destination="618-jR-iH6" kind="custom" identifier="showMyRequest" customClass="CenterContainmentSegue" customModule="SideMenuController" id="qCg-rl-ljM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uW7-Dl-cut" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2837" y="-1766"/>
+        </scene>
+        <!--MenuItemsWithHeaderVC-->
+        <scene sceneID="G4S-vR-rzR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MenuItemsWithHeaderVC" id="4aq-YH-Fme" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rLf-pa-FvQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3795" y="-2049"/>
+        </scene>
+        <!--PickUpDateVC-->
+        <scene sceneID="IA2-Oy-gey">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PickUpDateVC" id="QqY-H9-sIN" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2aY-OY-Hv6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3705" y="-1994"/>
+        </scene>
+        <!--DueAmountVC-->
+        <scene sceneID="zF7-51-VpR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DueAmountVC" id="FSV-ya-fS2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RLz-Iw-PI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3731" y="-1945"/>
+        </scene>
+        <!--MyOrdersVC-->
+        <scene sceneID="bfc-eC-hhA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MyOrdersVC" id="8O2-aP-zdO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gYY-gj-LVn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3721" y="-1898"/>
+        </scene>
+        <!--PriceListVC-->
+        <scene sceneID="MQE-Qn-GDN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PriceListVC" id="Ytb-g8-t8e" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iLh-N2-I0B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3715" y="-1855"/>
+        </scene>
+        <!--OffersVC-->
+        <scene sceneID="aE4-7f-RFB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="OffersVC" id="RbI-yb-liY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hqD-wl-1h6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3700" y="-1806"/>
+        </scene>
+        <!--FeedBackVC-->
+        <scene sceneID="lFK-8o-yqG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FeedBackVC" id="OLV-Na-oQU" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M9c-dq-hbM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3721" y="-1755"/>
+        </scene>
+        <!--SettingsVC-->
+        <scene sceneID="dMT-R0-58A">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SettingsVC" id="M3S-A4-MIh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oBj-Mq-l7z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3713" y="-1703"/>
+        </scene>
+        <!--AboutUsVC-->
+        <scene sceneID="GgT-IZ-Fkp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AboutUsVC" id="pie-Ys-dPW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gx0-yU-JfJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3716" y="-1651"/>
+        </scene>
+        <!--MyRequestsVC-->
+        <scene sceneID="Iph-UR-XQh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MyRequestsVC" id="618-jR-iH6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k8U-qT-dKw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3725" y="-1564"/>
+        </scene>
+        <!--DashboardVC-->
+        <scene sceneID="aQ7-lZ-nDp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DashboardVC" id="Efs-pl-aZn" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9rJ-3v-Glm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3727" y="-2091"/>
+        </scene>
+    </scenes>
+</document>

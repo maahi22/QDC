@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PriceCategoryCollectionCell" id="2mB-3n-6mL" customClass="PriceCategoryCollectionCell" customModule="QDCCustomerApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="124" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="124" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGa-Ku-dmV">
+                        <rect key="frame" x="0.0" y="0.0" width="124" height="47"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hD3-1b-VTN">
+                        <rect key="frame" x="0.0" y="47" width="124" height="3"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="hD3-1b-VTN" firstAttribute="top" secondItem="kGa-Ku-dmV" secondAttribute="bottom" id="189-98-7Kj"/>
+                <constraint firstAttribute="trailing" secondItem="hD3-1b-VTN" secondAttribute="trailing" id="8zn-TC-M03"/>
+                <constraint firstAttribute="bottom" secondItem="hD3-1b-VTN" secondAttribute="bottom" id="9dH-yt-jv7"/>
+                <constraint firstItem="kGa-Ku-dmV" firstAttribute="leading" secondItem="2mB-3n-6mL" secondAttribute="leading" id="FIr-PT-ixH"/>
+                <constraint firstItem="hD3-1b-VTN" firstAttribute="leading" secondItem="2mB-3n-6mL" secondAttribute="leading" id="Gdk-7H-MyN"/>
+                <constraint firstAttribute="trailing" secondItem="kGa-Ku-dmV" secondAttribute="trailing" id="W8i-pk-ngr"/>
+                <constraint firstItem="kGa-Ku-dmV" firstAttribute="top" secondItem="2mB-3n-6mL" secondAttribute="top" id="XQr-bD-8as"/>
+                <constraint firstAttribute="bottom" secondItem="kGa-Ku-dmV" secondAttribute="bottom" constant="3" id="wTe-0g-cgD"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="eOC-yj-3Jv"/>
+            <size key="customSize" width="124" height="50"/>
+            <connections>
+                <outlet property="categoryLabel" destination="kGa-Ku-dmV" id="rFo-vg-gUf"/>
+                <outlet property="selectedView" destination="hD3-1b-VTN" id="WIt-AK-Cue"/>
+            </connections>
+            <point key="canvasLocation" x="136" y="131"/>
+        </collectionViewCell>
+    </objects>
+</document>

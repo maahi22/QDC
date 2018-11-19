@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y3C-9I-FBV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ExitVC-->
+        <scene sceneID="smy-Ry-GEQ">
+            <objects>
+                <viewController storyboardIdentifier="ExitVC" id="RGf-lt-JdR" customClass="ExitVC" customModule="QDCCustomerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ash-OH-7X8"/>
+                        <viewControllerLayoutGuide type="bottom" id="whz-jX-u9U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nhc-kL-Wi0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CleanKart" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJg-gQ-MCi">
+                                <rect key="frame" x="50" y="237" width="275" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="cVs-ov-Cg1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pin Code App Image" translatesAutoresizingMaskIntoConstraints="NO" id="Muc-Zb-Pqr">
+                                <rect key="frame" x="113" y="74" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Ioc-FV-SO2"/>
+                                    <constraint firstAttribute="height" constant="150" id="xHA-U3-Qyj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oops we don't cover the requested area as of now." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rG2-wG-lHT">
+                                <rect key="frame" x="46" y="283" width="283" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Mjo-dQ-Scb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are expanding fast and will keep you  posted." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIL-OL-v7a">
+                                <rect key="frame" x="50" y="358" width="275" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="e3g-na-8qC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLt-rM-lxT">
+                                <rect key="frame" x="123" y="468" width="129" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5jh-st-177"/>
+                                    <constraint firstAttribute="width" constant="129" id="VAV-fk-DK3"/>
+                                </constraints>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="exitButtonClick:" destination="RGf-lt-JdR" eventType="touchUpInside" id="X3x-ZH-iRQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Muc-Zb-Pqr" firstAttribute="centerX" secondItem="Nhc-kL-Wi0" secondAttribute="centerX" id="2aE-54-b8j"/>
+                            <constraint firstItem="gIL-OL-v7a" firstAttribute="top" secondItem="rG2-wG-lHT" secondAttribute="bottom" constant="20" id="7HI-Fi-Ngj"/>
+                            <constraint firstAttribute="trailing" secondItem="SJg-gQ-MCi" secondAttribute="trailing" constant="50" id="8qv-Te-Mad"/>
+                            <constraint firstItem="rLt-rM-lxT" firstAttribute="top" secondItem="gIL-OL-v7a" secondAttribute="bottom" constant="55" id="IdF-ot-wNW"/>
+                            <constraint firstItem="Muc-Zb-Pqr" firstAttribute="top" secondItem="Ash-OH-7X8" secondAttribute="bottom" constant="10" id="KHr-OF-cnu"/>
+                            <constraint firstItem="rLt-rM-lxT" firstAttribute="centerX" secondItem="Nhc-kL-Wi0" secondAttribute="centerX" id="Q5w-E3-20v"/>
+                            <constraint firstAttribute="trailing" secondItem="gIL-OL-v7a" secondAttribute="trailing" constant="50" id="SrG-eB-L8S"/>
+                            <constraint firstItem="rG2-wG-lHT" firstAttribute="top" secondItem="SJg-gQ-MCi" secondAttribute="bottom" constant="19" id="gmb-e4-VGK"/>
+                            <constraint firstItem="SJg-gQ-MCi" firstAttribute="centerX" secondItem="Nhc-kL-Wi0" secondAttribute="centerX" id="j28-ge-6gx"/>
+                            <constraint firstItem="SJg-gQ-MCi" firstAttribute="top" secondItem="Muc-Zb-Pqr" secondAttribute="bottom" constant="13" id="j9M-bW-Ylc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rG2-wG-lHT" secondAttribute="trailing" constant="30" id="roo-eE-pOY"/>
+                            <constraint firstItem="gIL-OL-v7a" firstAttribute="leading" secondItem="Nhc-kL-Wi0" secondAttribute="leading" constant="50" id="rqY-Wa-w6M"/>
+                            <constraint firstItem="rG2-wG-lHT" firstAttribute="leading" secondItem="Nhc-kL-Wi0" secondAttribute="leadingMargin" constant="30" id="voT-xD-vyg"/>
+                            <constraint firstItem="rLt-rM-lxT" firstAttribute="centerX" secondItem="Nhc-kL-Wi0" secondAttribute="centerX" id="yRm-b6-uNg"/>
+                            <constraint firstItem="SJg-gQ-MCi" firstAttribute="leading" secondItem="Nhc-kL-Wi0" secondAttribute="leading" constant="50" id="zt9-Jl-eIP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="z9R-2s-Hbi"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="j28-ge-6gx"/>
+                                <exclude reference="yRm-b6-uNg"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="a4v-VJ-PSt"/>
+                    <connections>
+                        <outlet property="exitButton" destination="rLt-rM-lxT" id="QCX-9L-8TZ"/>
+                        <outlet property="logoImageView" destination="Muc-Zb-Pqr" id="nFa-Bp-kCR"/>
+                        <outlet property="subTitleOneLabel" destination="rG2-wG-lHT" id="K34-DG-ECJ"/>
+                        <outlet property="subTitleTwoLabel" destination="gIL-OL-v7a" id="ac9-zr-2Xl"/>
+                        <outlet property="titleLabel" destination="SJg-gQ-MCi" id="rQT-RQ-v6n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ouw-kW-aO3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="247.19999999999999" y="-103.89805097451276"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KGg-qM-xVG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="y3C-9I-FBV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oOg-Lb-zuo">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RGf-lt-JdR" kind="relationship" relationship="rootViewController" id="Kx1-7k-OUE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="til-Jy-ELJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-692" y="-103.89805097451276"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Pin Code App Image" width="240" height="240"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_QDCCustomerAppUITests {
+  umbrella header "Pods-QDCCustomerAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

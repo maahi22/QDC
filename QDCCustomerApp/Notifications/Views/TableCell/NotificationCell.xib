@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="NotificationCell" customModule="QDCCustomerApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="65.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8U-jH-vdl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsF-ep-S53">
+                                <rect key="frame" x="40" y="10" width="270" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="tMg-yx-DKH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Header Icon Notification.png" translatesAutoresizingMaskIntoConstraints="NO" id="yRQ-PY-QqM">
+                                <rect key="frame" x="10" y="15" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="FOc-OH-9jg"/>
+                                    <constraint firstAttribute="height" constant="20" id="xVI-0i-THN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9p-83-CkW">
+                                <rect key="frame" x="40" y="40" width="270" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="y9p-83-CkW" firstAttribute="top" secondItem="HsF-ep-S53" secondAttribute="bottom" constant="10" id="2F7-5B-3wX"/>
+                            <constraint firstItem="yRQ-PY-QqM" firstAttribute="leading" secondItem="T8U-jH-vdl" secondAttribute="leading" constant="10" id="Azm-tS-Qje"/>
+                            <constraint firstItem="HsF-ep-S53" firstAttribute="top" secondItem="T8U-jH-vdl" secondAttribute="top" constant="10" id="Bvt-th-ibQ"/>
+                            <constraint firstItem="yRQ-PY-QqM" firstAttribute="top" secondItem="T8U-jH-vdl" secondAttribute="top" constant="15" id="OKb-AK-cfK"/>
+                            <constraint firstItem="y9p-83-CkW" firstAttribute="leading" secondItem="T8U-jH-vdl" secondAttribute="leading" constant="40" id="WKG-xR-ZRE"/>
+                            <constraint firstAttribute="bottom" secondItem="y9p-83-CkW" secondAttribute="bottom" constant="9" id="br0-QM-Ihq"/>
+                            <constraint firstItem="HsF-ep-S53" firstAttribute="leading" secondItem="yRQ-PY-QqM" secondAttribute="trailing" constant="10" id="cS9-Yw-qqt"/>
+                            <constraint firstAttribute="trailing" secondItem="HsF-ep-S53" secondAttribute="trailing" constant="10" id="d0h-1V-JbB"/>
+                            <constraint firstAttribute="trailing" secondItem="y9p-83-CkW" secondAttribute="trailing" constant="10" id="jec-wB-Viq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="T8U-jH-vdl" secondAttribute="trailing" id="CNJ-p3-yMR"/>
+                    <constraint firstAttribute="bottom" secondItem="T8U-jH-vdl" secondAttribute="bottom" id="L5N-jj-O6D"/>
+                    <constraint firstItem="T8U-jH-vdl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Mhj-bV-oW9"/>
+                    <constraint firstItem="T8U-jH-vdl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="N4p-7w-Ts5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="notifContainerView" destination="T8U-jH-vdl" id="1P5-ob-S2r"/>
+                <outlet property="notifDetailLabel" destination="y9p-83-CkW" id="SlY-jC-oNS"/>
+                <outlet property="notifImageView" destination="yRQ-PY-QqM" id="NcJ-Qk-RWF"/>
+                <outlet property="notifTitleLabel" destination="HsF-ep-S53" id="k2X-ME-rVe"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Header Icon Notification.png" width="16" height="16"/>
+    </resources>
+</document>

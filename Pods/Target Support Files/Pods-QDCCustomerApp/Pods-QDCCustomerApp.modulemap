@@ -1,0 +1,6 @@
+framework module Pods_QDCCustomerApp {
+  umbrella header "Pods-QDCCustomerApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

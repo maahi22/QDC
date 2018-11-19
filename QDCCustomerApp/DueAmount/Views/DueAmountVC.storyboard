@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ou4-Rk-l23">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Due Amount-->
+        <scene sceneID="RbG-sE-Lto">
+            <objects>
+                <viewController storyboardIdentifier="DueAmountVC" id="Rrq-Pn-b61" customClass="DueAmountVC" customModule="QDCCustomerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6sI-Jo-bZg"/>
+                        <viewControllerLayoutGuide type="bottom" id="VFp-ya-wpx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lju-Zv-8P5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- AMOUNT --" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beK-8f-FJm">
+                                <rect key="frame" x="20" y="317" width="335" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="k1a-Gg-Nyk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount Due:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5d-U0-NEm">
+                                <rect key="frame" x="20" y="267" width="335" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="cJ7-1l-fJ0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.33333334329999997" green="0.33333334329999997" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIM-Lc-qvp">
+                                <rect key="frame" x="50" y="370" width="275" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1az-nW-zBL"/>
+                                </constraints>
+                                <state key="normal" title="PAY NOW"/>
+                                <connections>
+                                    <action selector="payNowPressed:" destination="Rrq-Pn-b61" eventType="touchUpInside" id="zWs-95-X1b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pIM-Lc-qvp" firstAttribute="top" secondItem="beK-8f-FJm" secondAttribute="bottom" constant="20" id="6Rf-Fk-QFp"/>
+                            <constraint firstItem="beK-8f-FJm" firstAttribute="leading" secondItem="Lju-Zv-8P5" secondAttribute="leading" constant="20" id="ApB-7J-ow8"/>
+                            <constraint firstAttribute="trailing" secondItem="c5d-U0-NEm" secondAttribute="trailing" constant="20" id="Jr5-Wi-MIm"/>
+                            <constraint firstItem="c5d-U0-NEm" firstAttribute="leading" secondItem="Lju-Zv-8P5" secondAttribute="leading" constant="20" id="UOg-3e-mES"/>
+                            <constraint firstItem="c5d-U0-NEm" firstAttribute="centerX" secondItem="Lju-Zv-8P5" secondAttribute="centerX" id="Ytq-cO-3Zx"/>
+                            <constraint firstItem="pIM-Lc-qvp" firstAttribute="leading" secondItem="bQR-NR-h1V" secondAttribute="leading" constant="50" id="dSf-1c-e31"/>
+                            <constraint firstItem="beK-8f-FJm" firstAttribute="centerY" secondItem="Lju-Zv-8P5" secondAttribute="centerY" id="dqd-ze-Ch2"/>
+                            <constraint firstAttribute="trailing" secondItem="beK-8f-FJm" secondAttribute="trailing" constant="20" id="hyU-7y-w8Q"/>
+                            <constraint firstItem="beK-8f-FJm" firstAttribute="centerX" secondItem="Lju-Zv-8P5" secondAttribute="centerX" id="mcw-NA-vKx"/>
+                            <constraint firstItem="bQR-NR-h1V" firstAttribute="trailing" secondItem="pIM-Lc-qvp" secondAttribute="trailing" constant="50" id="nqZ-GY-T1q"/>
+                            <constraint firstItem="beK-8f-FJm" firstAttribute="top" secondItem="c5d-U0-NEm" secondAttribute="bottom" constant="29" id="xcb-OO-pMH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bQR-NR-h1V"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Due Amount" id="JV6-38-wmE"/>
+                    <connections>
+                        <outlet property="amountTitleLabel" destination="beK-8f-FJm" id="F4z-SK-HV4"/>
+                        <outlet property="dueAmountClient" destination="KOs-lG-L77" id="k5O-Ko-cBq"/>
+                        <outlet property="dueAmountLabel" destination="c5d-U0-NEm" id="KC6-BY-CT6"/>
+                        <outlet property="myOrderClient" destination="GAo-CA-sm7" id="sxN-Sq-hOR"/>
+                        <outlet property="payNowButton" destination="pIM-Lc-qvp" id="7e6-Ft-3ID"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Aq-c7-jtl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="KOs-lG-L77" customClass="DueAmountClient" customModule="QDCCustomerApp" customModuleProvider="target"/>
+                <customObject id="GAo-CA-sm7" customClass="MyOrderClient" customModule="QDCCustomerApp" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="2732" y="1145.577211394303"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xXL-76-iZQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ou4-Rk-l23" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1rY-Hb-RTq">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Rrq-Pn-b61" kind="relationship" relationship="rootViewController" id="CA3-Rt-CQA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ja-UV-h1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1792.8" y="1145.577211394303"/>
+        </scene>
+    </scenes>
+</document>

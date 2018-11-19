@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NnA-7D-AuE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign Up Choice-->
+        <scene sceneID="8ER-hR-Wmd">
+            <objects>
+                <viewController storyboardIdentifier="SignUpChoiceVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qKl-Sk-9h2" customClass="SignUpChoiceVC" customModule="QDCCustomerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6HR-hs-01e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_image" translatesAutoresizingMaskIntoConstraints="NO" id="W6O-4w-ktp">
+                                <rect key="frame" x="107.5" y="87" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="M0P-Ef-Poo"/>
+                                    <constraint firstAttribute="width" secondItem="W6O-4w-ktp" secondAttribute="height" multiplier="1:1" id="gjp-EK-nbk"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="75"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAA-yY-W43">
+                                <rect key="frame" x="20" y="357.5" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="PCK-5V-mB8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Sign up with Mobile"/>
+                                <connections>
+                                    <action selector="mobileSignUpPressed:" destination="qKl-Sk-9h2" eventType="touchUpInside" id="oCq-YU-atY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXU-Ql-JLU">
+                                <rect key="frame" x="16" y="25" width="28" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="28" id="8YS-hf-7K3"/>
+                                    <constraint firstAttribute="height" constant="25" id="BKk-Jj-nSL"/>
+                                </constraints>
+                                <state key="normal" image="left-arrow"/>
+                                <connections>
+                                    <action selector="backPressed:" destination="qKl-Sk-9h2" eventType="touchUpInside" id="F3I-jf-mYf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7b-Q1-1NJ">
+                                <rect key="frame" x="20" y="277.5" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JV5-q1-UcN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Sign up with Facebook"/>
+                                <connections>
+                                    <action selector="fbSignUp:" destination="qKl-Sk-9h2" eventType="touchUpInside" id="w3N-e0-ZeF"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p2Q-wu-vnR">
+                                <rect key="frame" x="20" y="277" width="335" height="50"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jFL-Aq-rBo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="p2Q-wu-vnR" firstAttribute="top" secondItem="W6O-4w-ktp" secondAttribute="bottom" constant="30" id="0mY-21-EVZ"/>
+                            <constraint firstItem="fAA-yY-W43" firstAttribute="centerX" secondItem="6HR-hs-01e" secondAttribute="centerX" id="6Cm-BT-iNT"/>
+                            <constraint firstItem="W6O-4w-ktp" firstAttribute="centerY" secondItem="6HR-hs-01e" secondAttribute="centerY" multiplier="0.5" id="B5l-iz-3hW"/>
+                            <constraint firstItem="iXU-Ql-JLU" firstAttribute="top" secondItem="6HR-hs-01e" secondAttribute="top" constant="25" id="BAK-2m-s6b"/>
+                            <constraint firstItem="n7b-Q1-1NJ" firstAttribute="leading" secondItem="BtX-Ac-kN6" secondAttribute="leading" constant="20" id="D1c-0W-Mrc"/>
+                            <constraint firstItem="n7b-Q1-1NJ" firstAttribute="centerX" secondItem="6HR-hs-01e" secondAttribute="centerX" id="DRb-d0-PGF"/>
+                            <constraint firstItem="p2Q-wu-vnR" firstAttribute="leading" secondItem="BtX-Ac-kN6" secondAttribute="leading" constant="20" id="Nh6-e6-ED0"/>
+                            <constraint firstItem="fAA-yY-W43" firstAttribute="top" secondItem="n7b-Q1-1NJ" secondAttribute="bottom" constant="30" id="V0a-0d-go6"/>
+                            <constraint firstItem="W6O-4w-ktp" firstAttribute="centerX" secondItem="6HR-hs-01e" secondAttribute="centerX" id="bDR-Jb-EOC"/>
+                            <constraint firstItem="BtX-Ac-kN6" firstAttribute="trailing" secondItem="fAA-yY-W43" secondAttribute="trailing" constant="20" id="hTm-iE-Mop"/>
+                            <constraint firstItem="BtX-Ac-kN6" firstAttribute="trailing" secondItem="n7b-Q1-1NJ" secondAttribute="trailing" constant="20" id="jbV-g7-vUP"/>
+                            <constraint firstItem="iXU-Ql-JLU" firstAttribute="leading" secondItem="BtX-Ac-kN6" secondAttribute="leading" constant="16" id="kWT-dy-KsR"/>
+                            <constraint firstItem="BtX-Ac-kN6" firstAttribute="trailing" secondItem="p2Q-wu-vnR" secondAttribute="trailing" constant="20" id="pLk-JX-Xcr"/>
+                            <constraint firstItem="fAA-yY-W43" firstAttribute="leading" secondItem="BtX-Ac-kN6" secondAttribute="leading" constant="20" id="qfo-Yk-Azr"/>
+                            <constraint firstItem="n7b-Q1-1NJ" firstAttribute="top" secondItem="W6O-4w-ktp" secondAttribute="bottom" constant="30.5" id="zGX-ad-7Lb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BtX-Ac-kN6"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sign Up Choice" id="7KT-VT-kwz">
+                        <barButtonItem key="backBarButtonItem" title=" " id="XtU-eo-GS4"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="facebookButton" destination="n7b-Q1-1NJ" id="DEW-ks-4pk"/>
+                        <outlet property="fbView" destination="p2Q-wu-vnR" id="AY0-p9-MOh"/>
+                        <outlet property="imageView" destination="W6O-4w-ktp" id="HVp-DM-uY8"/>
+                        <outlet property="mobileButon" destination="fAA-yY-W43" id="QaD-Dn-Ixx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WJm-f1-4Da" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2082.4000000000001" y="141.67916041979012"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bii-gW-WKw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NnA-7D-AuE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zVe-Gf-gWZ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qKl-Sk-9h2" kind="relationship" relationship="rootViewController" id="grU-uh-58A"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lMw-9O-aDJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1143.2" y="141.67916041979012"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="app_image" width="1024" height="1024"/>
+        <image name="left-arrow" width="51.200000762939453" height="51.200000762939453"/>
+    </resources>
+</document>
